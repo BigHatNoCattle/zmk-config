@@ -13,10 +13,10 @@
 #define LOWER 1
 #define RAISE 2
 
-// #define MV_UP RS(RC(UP))
-// #define MV_DOWN RS(RC(DOWN))
-// #define COPY_UP RS(RA(UP))
-// #define COPY_DOWN RS(RA(DOWN))
+#define MV_UP RS(RC(UP))
+#define MV_DOWN RS(RC(DOWN))
+#define COPY_UP RS(RA(UP))
+#define COPY_DOWN RS(RA(DOWN))
 
 / {
 	keymap {
