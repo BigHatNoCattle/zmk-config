@@ -62,7 +62,7 @@
 //                       |       |      |      |        |  |       |         |         |       |
 			bindings = <
 &kp GRAVE &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR &kp PRCNT                     &kp CARET        &kp AMPS         &kp STAR  &kp MINUS         &kp PLUS          &trans
-&trans    &trans    &kp LG(C) &kp LG(V) &trans     &trans                        &kp trans        &kp RS(RG(LEFT)) &kp UP    &kp RS(RG(RIGHT)) &trans            &trans
+&trans    &trans    &kp LG(C) &kp LG(V) &trans     &trans                        &kp trans        &trans           &kp UP    &trans            &trans            &trans
 &trans    &kp LSHFT &kp LALT  &kp LGUI  &trans     &trans                        &kp RS(RA(LEFT)) &kp LEFT         &kp DOWN  &kp RIGHT         &kp RS(RA(RIGHT)) &trans
 &trans    &trans    &trans    &trans    &trans     &trans   &kp LPAR  &kp RPAR   &kp TILDE        &kp UNDER        &kp EQUAL &kp LT            &kp GT            &kp PIPE
                               &trans    &trans     &trans   &trans    &trans     &trans           &trans           &trans
