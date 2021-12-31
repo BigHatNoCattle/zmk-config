@@ -74,17 +74,17 @@
 
 		raise_layer {
 // --------------------------------------------------------------------------------------------------------------------
-// |   `   |  !  |  @    |  #    |  $   |  %   |                   |  ^      |   &   |   *   |   -  |   +     |       |
-// |       |     | CMD+C | CMD+V |      |      |                   |         |       |   ^   |      |         |       |
-// |       |SHFT |  ALT  |  CMD  |      |      |                   | SH+OPT+L|   <-  |   v   |  ->  |SH+OPT+R |       |
-// |       |     |       |       |      |      |    (   |  |   )   |  +      |   -   |   =   |  <   |   >     |  "|"  |
-//                       |       |      |      |        |  |       |         |       |       |
+// |   `   |  !  |  @    |  #    |  $   |  %   |                   |  ^      |    &    |   *   |    -    |   +     |       |
+// |       |     | CMD+C | CMD+V |      |      |                   |         | SH+OPT+L|   ^   |SH+OPT+L |         |       |
+// |       |SHFT |  ALT  |  CMD  |      |      |                   | SH+OPT+L|    <-   |   v   |   ->    |SH+OPT+R |       |
+// |       |     |       |       |      |      |    (   |  |   )   |  +      |    -    |   =   |    <    |   >     |  "|"  |
+//                       |       |      |      |        |  |       |         |         |       |
 			bindings = <
-&kp GRAVE &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR &kp PRCNT                     &kp CARET        &kp AMPS  &kp STAR  &kp MINUS &kp PLUS          &trans
-&trans    &trans    &kp LG(C) &kp LG(V) &trans     &trans                        &trans           &trans    &kp UP    &trans    &trans            &trans
-&trans    &kp LSHFT &kp LALT  &kp LGUI  &trans     &trans                        &kp RS(RA(LEFT)) &kp LEFT  &kp DOWN  &kp RIGHT &kp RS(RA(RIGHT)) &trans
-&trans    &trans    &trans    &trans    &trans     &trans   &kp LPAR  &kp RPAR   &kp KP_PLUS      &kp MINUS &kp EQUAL &kp LT    &kp GT            &kp PIPE
-                              &trans    &trans     &trans   &trans    &trans     &trans           &trans    &trans
+&kp GRAVE &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR &kp PRCNT                     &kp CARET        &kp AMPS         &kp STAR  &kp MINUS         &kp PLUS          &trans
+&trans    &trans    &kp LG(C) &kp LG(V) &trans     &trans                        &trans           &kp RS(RG(LEFT)) &kp UP    &kp RS(RG(RIGHT)) &trans            &trans
+&trans    &kp LSHFT &kp LALT  &kp LGUI  &trans     &trans                        &kp RS(RA(LEFT)) &kp LEFT         &kp DOWN  &kp RIGHT         &kp RS(RA(RIGHT)) &trans
+&trans    &trans    &trans    &trans    &trans     &trans   &kp LPAR  &kp RPAR   &kp KP_PLUS      &kp MINUS        &kp EQUAL &kp LT            &kp GT            &kp PIPE
+                              &trans    &trans     &trans   &trans    &trans     &trans           &trans           &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
