@@ -84,7 +84,7 @@
 &kp GRAVE &kp TILDE &trans    &trans        &trans        &trans                              &kp RS(RA(UP))   &trans    &trans    &trans     &trans  &kp HOME
 &trans    &trans    &trans    &trans        &trans        &trans                              &kp RS(RA(DOWN)) &kp LBRC  &kp UP    &kp RBRC   &trans  &kp PAGE_UP
 &trans    &kp CAPS  &kp LSHFT &kp LC(LSHFT) &kp LA(LSHFT) &kp LG(LSHFT)                       &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp PAGE_DOWN
-&trans    &mt LG(Z) &mt LG(X) &mt LG(C)     &mt LG(V)     &mt LG(B) &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &kp MINUS &kp EQUAL &kp PLUS   &trans  &kp END
+&trans    &kp LG(Z) &kp LG(X) &kp LG(C)     &kp LG(V)     &kp LG(B) &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &kp MINUS &kp EQUAL &kp PLUS   &trans  &kp END
                               &trans        &trans        &trans    &trans       &trans       &trans           &trans    &trans
 			>;
 
