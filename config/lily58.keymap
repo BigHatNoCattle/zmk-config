@@ -55,18 +55,18 @@
 		};
 
 		lower_layer {
-// -------------------------------------------------------------------------------------------------------------------
-// |  F1   |  F2 |  F3  |  F4  |  F5  |  F6  |                  |  F7    |  F8     |  F9     |  F10  |  F11  |  F12  |
-// | BTCLR | BT1 | BT2  |  BT3 |  BT4 |  BT5 |                  |        |         |         |       |       |       |
-// |  CAPS |     |      |      |      |      |                  |        |  COPY ^ |  COPY v |  MV ^ |  MV v |       |
-// |       | XON | XOFF | XTOG |      |      |       |  |       |        |         |         |       |       |       |
-//                      |      |      |      |       |  |       |        |         |         |
+// -----------------------------------------------------------------------------------------------------------------------------------------------------
+// | BTCLR |  BT1   |  BT2      |  BT3   |  BT4  |  BT5   |                      |  COPY ^  |              |            |              |       | HOME  |
+// |   `   |   ~    | ALT+GUI+I | CTRL+E |       |  CMD+` |                      |  COPY v  |              | SEL LINE ^ |              |       | PG ^  |
+// | CAPS  | CTRL+A |           |        |       |        |                      |  MV   ^  |  SEL LINE <  | SEL LINE v |  SEL LINE >  |       | PG v  |
+// |       |        |           |        |       |        | CMD+"[" |  | CMD+"]" |  MV   v  |     `        |     $      |     {        |  }    | END   |
+//                              |        |       |        |         |  |         |    XON   |    XOFF      |   XTOG     |
 			bindings = <
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7   &kp F8         &kp F9            &kp F10        &kp F11          &kp F12
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans   &trans         &trans            &trans         &trans           &trans
-&kp CAPS   &trans           &trans            &trans            &trans       &trans                       &trans   &kp RS(RA(UP)) &kp RS(RA(DOWN))  &kp RS(RC(UP)) &kp RS(RC(DOWN)) &trans
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &trans   &trans         &trans            &trans         &trans           &trans
-                                              &trans            &trans       &trans    &trans   &trans    &trans   &trans         &trans
+&bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                           &kp RS(RA(UP))    &trans             &trans       &trans             &trans    &kp HOME
+&kp GRAVE  &kp TILDE     &kp LA(LG(I))  &kp LC(E)     &trans         &kp LG(GRAVE)                          &kp RS(RA(DOWN))  &trans             &kp RS(UP)   &trans             &trans    &kp PG_UP
+&kp CAPS   &kp LC(A)     &trans         &trans        &trans         &trans                                 &kp RS(RC(UP))    &kp RS(RG(LEFT))   &kp RS(DOWN) &kp RS(RG(RIGHT))  &trans    &kp PG_DOWN
+&trans     &trans        &trans         &trans        &trans         &trans     &kp LG(LBKT)  &kp RG(RBKT)  &kp RS(RC(DOWN))  &kp GRAVE          &kp DOLLAR   &kp LBRC           &kp RBRC  &kp END
+                                        &trans        &trans         &trans     &trans        &trans        &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
