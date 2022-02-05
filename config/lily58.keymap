@@ -81,11 +81,11 @@
 // |       |     |      |          |          |          | CMD+"[" |  | CMD+"]" | MOVE v  |    -    |   =   |   +     |         | END   |
 //                      |          |          |          |         |  |         |         |         |       |
 			bindings = <
-&kp GRAVE &kp TILDE &trans    &trans        &trans        &trans                             &kp RS(RA(UP))   &trans    &trans    &trans     &trans  &kp HOME
-&trans    &trans    &trans    &trans        &trans        &trans                             &kp RS(RA(DOWN)) &trans    &kp UP    &trans     &trans  &kp PG_UP
-&trans    &kp CAPS  &kp LSHFT &kp LC(LSHFT) &kp LA(LSHFT) &kp LG(LSHFT)                      &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp PG_DOWN
-&trans    &trans    &trans    &trans        &trans        &trans   &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &kp MINUS &kp EQUAL &kp PLUS   &trans  &kp END
-                              &trans        &trans        &trans   &trans       &trans       &trans           &trans    &trans
+&kp GRAVE &kp TILDE &trans    &trans        &trans        &trans                     &kp RS(RA(UP))   &trans    &trans    &trans     &trans  &kp HOME
+&trans    &trans    &trans    &trans        &trans        &trans                     &kp RS(RA(DOWN)) &trans    &kp UP    &trans     &trans  &kp PG_UP
+&trans    &kp CAPS  &kp LSHFT &kp LC(LSHFT) &kp LA(LSHFT) &kp LG(LSHFT)              &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp PG_DOWN
+&trans    &trans    &trans    &trans        &trans        &trans   &trans   &trans   &kp RS(RC(DOWN)) &kp MINUS &kp EQUAL &kp PLUS   &trans  &kp END
+                              &trans        &trans        &trans   &trans   &trans   &trans           &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
