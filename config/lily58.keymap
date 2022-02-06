@@ -37,12 +37,12 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-// ------------------------------------------------------------------------------------------------------------------------
-// |   ESC | ! 1 | @ 2 | # 3       | $ 4      |  % 5  |                   | ^ 6   | & 7   | * 8   | + 9  |  = 0  | BSPC   |
-// |   TAB |  Q  |  W  |  E        |  R       |  T    |                   |  Y    |  U    |  I    |  O   |   P   |   \    |
-// |  CTRL |  A  |  S  |  LOWER D  |  RAISE F |  G    |                   |  H    |  J    |  K    |  L   |   ;   |  ` '   |
-// | SHIFT |  Z  |  X  |  C        |  V       |  B    |   ( [  |  |  ] )  |  N    |  M    |  ,    |  .   |   /   | SKSHFT |
-//                     | ALT       | GUI      | LOWER |  SPACE |  | ENTER | RAISE |  DEL  |  -    |
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |   ESC |   ! 1    |   @ 2    |   # 3    |   $ 4    |  % 5  |                   | ^ 6   | & 7   | * 8   | + 9  |  = 0  | BSPC   |
+// |   TAB |     Q    |    W     |  CTRL+E E|  CMD+R R |  T    |                   |  Y    |  U    |  I    | ( O  |  P )  |   \    |
+// |  CTRL | CTRL+A A |  CMD+S S |  CMD+D D |  CMD+F F |  G    |                   |  H    |  J    |  K    |  L   |   ;   |  ` '   |
+// | SHIFT | CMD+Z Z  |  CMD+X X |  CMD+C C |  CMD+V V |  B    |   { [  |  |  ] }  |  N    |  M    |  ,    |  .   |   /   | SKSHFT |
+//                               |   ALT    |  CMD     | LOWER |  SPACE |  | ENTER | RAISE |  DEL  |  -    |
 
 			bindings = <
 &kp ESC   &mt EXCL N1 &mt AT N2   &mt HASH N3 &mt DOLLAR N4 &mt PRCNT N5                         &mt CARET N6 &mt AMPS N7 &mt STAR N8 &mt PLUS N9    &mt EQUAL N0   &kp BSPC
