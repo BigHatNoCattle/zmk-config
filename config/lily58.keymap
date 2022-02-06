@@ -81,10 +81,10 @@
 // |       |     |      |   COPY   |          |          | CMD+"[" |  | CMD+"]" | MOVE v  |    -    |   =   |    +    |         | END  |
 //                      |          |          |          |         |  |         |         |         |       |
 			bindings = <
-&kp GRAVE &kp TILDE &trans    &trans        &trans        &trans                              &kp RS(RA(UP))   &trans    &trans    &trans     &trans  &kp HOME
-&trans    &trans    &trans    &trans        &trans        &trans                              &kp RS(RA(DOWN)) &kp LBRC  &kp UP    &kp RBRC   &trans  &kp PAGE_UP
-&trans    &kp CAPS  &kp LSHFT &kp LC(LSHFT) &kp LA(LSHFT) &kp LG(LSHFT)                       &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp PAGE_DOWN
-&trans    &kp LG(Z) &kp LG(X) &kp LG(C)     &kp LG(V)     &kp LG(B) &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &kp MINUS &kp EQUAL &kp PLUS   &trans  &kp END
+&kp GRAVE &kp TILDE &trans    &trans        &trans        &trans                              &kp RS(RA(UP))   &trans    &trans    &trans    &trans  &kp HOME
+&trans    &trans    &trans    &kp LC(E)     &kp LG(R)     &kp LC(GRAVE)                       &kp RS(RA(DOWN)) &kp LBRC  &kp UP    &kp RBRC  &trans  &kp PAGE_UP
+&kp CAPS  &kp LC(A) &kp LSHFT &kp LC(LSHFT) &kp LA(LSHFT) &kp LG(LSHFT)                       &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT &trans  &kp PAGE_DOWN
+&trans    &kp LG(Z) &kp LG(X) &kp LG(C)     &kp LG(V)     &kp LG(B) &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &kp MINUS &kp EQUAL &kp PLUS  &trans  &kp END
                               &trans        &trans        &trans    &trans       &trans       &trans           &trans    &trans
 			>;
 
