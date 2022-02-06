@@ -13,23 +13,9 @@
 #define LOWER 1
 #define RAISE 2
 
-// MV UP/DOWN
-// RS(RC(UP))
-// RS(RC(DOWN))
-// SHIFT + CTRL + UP
-// SHIFT + CTRL + DOWN
-
-// CPY UP/DOWN
-// RS(RA(UP))
-// RS(RA(DOWN))
-// SHIFT + ALT + UP
-// SHIFT + ALT + DOWN
-
-// CPY
-// LG(C)
-
-// PASTE
-// LG(V)
+&mt {
+    tapping-term-ms = <400>;
+};
 
 
 / {
@@ -63,10 +49,10 @@
 // |       | XON | XOFF | XTOG |      |      |   (   |  |   )   |        |          |         |         |       |       |
 //                      |      |      |      |       |  |       |        |          |         |
 			bindings = <
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7   &kp F8           &kp F9       &kp F10          &kp F11  &kp F12
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans   &trans           &kp RS(UP)   &trans           &trans   &trans
-&kp CAPS   &trans           &trans            &trans            &trans       &trans                       &trans   &kp RS(RG(LEFT)) &kp RS(DOWN) &kp RS(RG(LEFT)) &trans   &trans
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &kp LPAR &kp RPAR  &trans   &trans           &trans       &trans           &trans   &trans
+&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7   &kp F8           &kp F9       &kp F10           &kp F11  &kp F12
+&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans   &trans           &kp RS(UP)   &trans            &trans   &trans
+&kp CAPS   &trans           &trans            &trans            &trans       &trans                       &trans   &kp RS(RG(LEFT)) &kp RS(DOWN) &kp RS(RG(RIGHT)) &trans   &trans
+&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &kp LPAR &kp RPAR  &trans   &trans           &trans       &trans            &trans   &trans
                                               &trans            &trans       &trans    &trans   &trans    &trans   &trans           &trans
 			>;
 
