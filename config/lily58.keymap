@@ -38,9 +38,9 @@
 
 		default_layer {
 // ------------------------------------------------------------------------------------------------------------------------
-// |   ESC |  1  |  2  |  3        |  4       |  5    |                   |  6    |  7    |  8    |  9   |   0   | BSPC   |
+// |   ESC | ! 1 | @ 2 | # 3       | $ 4      |  % 5  |                   | ^ 6   | & 7   | * 8   | + 9  |  = 0  | BSPC   |
 // |   TAB |  Q  |  W  |  E        |  R       |  T    |                   |  Y    |  U    |  I    |  O   |   P   |   \    |
-// |  CTRL |  A  |  S  |  LOWER D  |  RAISE F |  G    |                   |  H    |  J    |  K    |  L   |   ;   |   '    |
+// |  CTRL |  A  |  S  |  LOWER D  |  RAISE F |  G    |                   |  H    |  J    |  K    |  L   |   ;   |  ` '   |
 // | SHIFT |  Z  |  X  |  C        |  V       |  B    |   ( [  |  |  ] )  |  N    |  M    |  ,    |  .   |   /   | SKSHFT |
 //                     | ALT       | GUI      | LOWER |  SPACE |  | ENTER | RAISE |  DEL  |  -    |
 
@@ -74,18 +74,18 @@
 		};
 
 		raise_layer {
-// -------------------------------------------------------------------------------------------------------------------------------------
-// |   `   |  ~    |          |          |          |          |                      | COPY ^  |         |       |         |         | HOME |
+// -------------------------------------------------------------------------------------------------------------------------------------------
+// |   `   |   $   |     {    |    }     |          |          |                      | COPY ^  |         |       |         |         | HOME |
 // |       |       | DEV TOOLS|  CTRL+E  | REFRESH  | TOG TERM |                      | COPY v  |    {    |   ^   |    }    |         | PG ^ |
 // | CAPS  | CTRL+A|   SHFT   | CTRL+SHFT| ALT+SHFT | CMD+SHFT |                      | MOVE ^  |    <-   |   v   |   ->    |         | PG v |
 // |       | CMD+Z |   CMD+X  |  CMD+C   |  CMD+V   |  CMD+B   | CMD+"[" |  | CMD+"]" | MOVE v  |    -    |   =   |    +    |         | END  |
 //                            |          |          |          |         |  |         |         |         |       |
 			bindings = <
-&kp GRAVE &kp TILDE &trans        &trans        &trans        &trans                              &kp RS(RA(UP))   &trans    &trans    &trans    &trans  &kp HOME
-&trans    &trans    &kp RG(RA(I)) &kp LC(E)     &kp LG(R)     &kp LC(GRAVE)                       &kp RS(RA(DOWN)) &kp LBRC  &kp UP    &kp RBRC  &trans  &kp PAGE_UP
-&kp CAPS  &kp LC(A) &kp LSHFT     &kp LC(LSHFT) &kp LA(LSHFT) &kp LG(LSHFT)                       &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT &trans  &kp PAGE_DOWN
-&trans    &kp LG(Z) &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B) &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &kp MINUS &kp EQUAL &kp PLUS  &trans  &kp END
-                                  &trans        &trans        &trans    &trans       &trans       &trans           &trans    &trans
+&kp GRAVE &kp DOLLAR &kp LBRC      &kp RBRC      &trans        &trans                              &kp RS(RA(UP))   &trans    &trans    &trans    &trans  &kp HOME
+&trans    &trans     &kp RG(RA(I)) &kp LC(E)     &kp LG(R)     &kp LC(GRAVE)                       &kp RS(RA(DOWN)) &kp LBRC  &kp UP    &kp RBRC  &trans  &kp PAGE_UP
+&kp CAPS  &kp LC(A)  &kp LSHFT     &kp LC(LSHFT) &kp LA(LSHFT) &kp LG(LSHFT)                       &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT &trans  &kp PAGE_DOWN
+&trans    &kp LG(Z)  &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B) &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &kp MINUS &kp EQUAL &kp PLUS  &trans  &kp END
+                                   &trans        &trans        &trans    &trans       &trans       &trans           &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
