@@ -13,8 +13,10 @@
 #define LOWER 1
 #define RAISE 2
 
+// custom config for mod-taps
 &mt {
-    tapping-term-ms = <400>;
+    tapping-term-ms = <300>;
+		flavor = "tap-preferred";
 };
 
 
@@ -31,10 +33,10 @@
 //                               |   ALT    |  CMD     | LOWER |  SPACE |  | ENTER | RAISE |  DEL  |  -    |
 
 			bindings = <
-&kp ESC   &mt EXCL N1 &mt AT N2   &mt HASH N3 &mt DOLLAR N4 &mt PRCNT N5                         &mt CARET N6 &mt AMPS N7 &mt STAR N8 &mt RG(LPAR) N9 &mt RG(RPAR) N0 &kp BSPC
-&kp TAB   &kp Q       &kp W       &mt LC(E) E &mt LG(R) R   &kp T                                &kp Y        &kp U       &kp I       &mt PLUS O      &mt EQUAL P     &kp BSLH
-&kp LCTRL &mt LC(A) A &mt LG(S) S &mt LG(D) D &mt LG(F) F   &kp G                                &kp H        &kp J       &kp K       &kp L           &kp SEMI        &mt GRAVE SQT
-&kp LSHFT &mt LG(Z) Z &mt LG(X) X &mt LG(C) C &mt LG(V) V   &kp B  &mt LBRC LBKT  &mt RBRC RBKT  &kp N        &kp M       &kp COMMA   &kp DOT         &kp FSLH        &sk RSHFT
+&kp ESC   &mt EXCL N1 &mt AT N2   &mt HASH N3 &mt DOLLAR N4 &mt PRCNT N5                         &mt CARET N6 &mt AMPS N7 &mt STAR N8 &mt LPAR N9 &mt RPAR N0 &kp BSPC
+&kp TAB   &kp Q       &kp W       &mt LC(E) E &mt LG(R) R   &kp T                                &kp Y        &kp U       &kp I       &mt PLUS O  &mt EQUAL P &kp BSLH
+&kp LCTRL &mt LC(A) A &mt LG(S) S &mt LG(D) D &mt LG(F) F   &kp G                                &kp H        &kp J       &kp K       &kp L       &kp SEMI    &mt GRAVE SQT
+&kp LSHFT &mt LG(Z) Z &mt LG(X) X &mt LG(C) C &mt LG(V) V   &kp B  &mt LBRC LBKT  &mt RBRC RBKT  &kp N        &kp M       &kp COMMA   &kp DOT     &kp FSLH    &sk RSHFT
                                   &kp LALT    &kp LGUI      &mo 1  &kp SPACE      &kp RET        &mo 2        &kp DEL     &kp MINUS
 			>;
 
