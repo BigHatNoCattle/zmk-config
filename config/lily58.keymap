@@ -19,7 +19,6 @@
 		flavor = "tap-preferred";
 };
 
-
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -62,17 +61,17 @@
 		};
 
 		raise_layer {
-// -------------------------------------------------------------------------------------------------------------------------------------------
-// |   `   |   $   |     {    |    }     |          |          |                      | COPY ^  |    (    |   )   |   _ -   |   + =   | HOME |
-// |       |       | DEV TOOLS|  CTRL+E  | REFRESH  | TOG TERM |                      | COPY v  |         |   ^   |    {    |   }     | PG ^ |
-// | CAPS  | CTRL+A|   SHFT   | CTRL+SHFT| ALT+SHFT | CMD+SHFT |                      | MOVE ^  |    <-   |   v   |   ->    |  SHFT   | PG v |
-// |       | CMD+Z |   CMD+X  |  CMD+C   |  CMD+V   |  CMD+B   | CMD+"[" |  | CMD+"]" | MOVE v  |         |   <   |    >    |   ?     | END  |
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+// |   `   |   $   |     {    |    }     |          |          |                      | COPY ^  |         |       |         | CURSOR_^    | HOME |
+// |       |       | DEV TOOLS|  CTRL+E  | REFRESH  | TOG TERM |                      | COPY v  |         |   ^   |         | CURSOR_v    | PG ^ |
+// | CAPS  | ALT   |   SHFT   | CMD+SHFT | ALT+SHFT | CTRL+SHFT|                      | MOVE ^  |    <-   |   v   |   ->    |  SHFT       | PG v |
+// |       | CMD+Z |   CMD+X  |  CMD+C   |  CMD+V   |  CMD+B   | CMD+"[" |  | CMD+"]" | MOVE v  |    :    |   =   |    >    | END_CURSORS | END  |
 //                            |          |          |          |         |  |         |         |         |       |
 			bindings = <
-&kp GRAVE &kp DOLLAR &kp LBRC      &kp RBRC      &trans        &trans                              &kp RS(RA(UP))   &kp LPAR  &kp RPAR  &mt UNDER MINUS &mt PLUS EQUAL &kp HOME
-&trans    &trans     &kp RG(RA(I)) &kp LC(E)     &kp LG(R)     &kp LC(GRAVE)                       &kp RS(RA(DOWN)) &trans    &kp UP    &kp LBRC        &kp RBRC       &kp PAGE_UP
-&kp CAPS  &kp LC(A)  &kp LSHFT     &kp LC(LSHFT) &kp LA(LSHFT) &kp LG(LSHFT)                       &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT       &kp RSHFT      &kp PAGE_DOWN
-&trans    &kp LG(Z)  &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B) &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &trans    &kp LT    &kp GT          &kp QMARK      &kp END
+&kp GRAVE &kp DOLLAR &kp LBRC      &kp RBRC      &trans        &trans                              &kp RS(RA(UP))   &trans    &trans    &trans    &kp RA(RG(UP))   &trans
+&trans    &trans     &kp RG(RA(I)) &kp LC(E)     &kp LG(R)     &kp LC(GRAVE)                       &kp RS(RA(DOWN)) &trans    &kp UP    &trans    &kp RA(RG(DOWN)) &kp PAGE_UP
+&kp CAPS  &kp LALT   &kp LSHFT     &kp LG(LSHFT) &kp LA(LSHFT) &kp LC(LSHFT)                       &kp RS(RC(UP))   &kp LEFT  &kp DOWN  &kp RIGHT &kp RSHFT        &kp PAGE_DOWN
+&trans    &kp LG(Z)  &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B) &kp LG(LBKT) &kp RG(RBKT) &kp RS(RC(DOWN)) &kp COLON &kp EQUAL &kp GT    &kp RS(RA(I))    &kp END
                                    &trans        &trans        &trans    &trans       &trans       &trans           &trans    &trans
 			>;
 
